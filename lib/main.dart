@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';  
+import 'package:get/get.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:shonish_assignment/app/modules/home_screen/views/home_screen_view.dart';
 import 'package:shonish_assignment/app/utils/colors.dart';
@@ -15,15 +15,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-     return ScreenUtilInit(
-       builder: (context, child) =>
-     GetMaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(primaryColor: kPrimaryColor),
-      debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
-    ),
-    designSize: const Size(360, 690),
+    return ScreenUtilInit(
+      builder: (context, child) => GetMaterialApp(
+        title: 'Flutter Demo',
+        theme: ThemeData(primaryColor: kPrimaryColor),
+        debugShowCheckedModeBanner: false,
+        home: HomeScreen(),
+      ),
+      designSize: const Size(360, 690),
       minTextAdapt: true,
     );
   }
